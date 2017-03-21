@@ -1,0 +1,14 @@
+{
+  "name": "lollipopstick",
+  "version": "1.0.0",
+  "description": "a random student picker",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick Field",
+  "preferGlobal": true,
+  "license": "ISC",
+  "bin": {
+    "lpop": "index.js"
+  }
+}
