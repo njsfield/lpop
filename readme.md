@@ -6,7 +6,7 @@ A command line tool to return a random string (name) from an array.
 
 1. Clone the repo to your local machine.
 2. cd into the repo directory.
-3. Run `npm link`.
+3. Run `sudo npm link`.
 4. Run `lpop` to generate random string.
 
 ## How?
