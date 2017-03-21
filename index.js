@@ -19,5 +19,4 @@ console.log(`\x1b[36m%s\x1b[0m`, data.students[data.index]);
 
 data.index += 1;
 
-fs.writeFileSync("data.json", data);
-
+fs.writeFileSync("data.json", JSON.stringify(data)); 
