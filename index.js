@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 const fs = require("fs");
+const path = require("path");
 
 const data = require("./data.json"); 
 
@@ -29,4 +30,4 @@ console.log(`\x1b[36m%s\x1b[0m`, data.students[data.index]);
 
 data.index += 1;
 
-fs.writeFileSync("data.json", JSON.stringify(data)); 
+fs.writeFileSync(path.join(__dirname,"data.json"), JSON.stringify(data)); 
