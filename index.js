@@ -4,11 +4,21 @@ const fs = require("fs");
 const data = require("./data.json"); 
 
 const shuffler = (a) => {
-    for (let i = a.length; i; i--) {
-        let j = Math.floor(Math.random() * i);
-        [a[i - 1], a[j]] = [a[j], a[i - 1]];
+ let counter = a.length;
+
+    while (counter > 0) {
+        let index = Math.floor(Math.random() * counter);
+
+        counter--;
+
+        let temp = a[counter];
+        a[counter] = a[index];
+        a[index] = temp;
     }
+
+    return a;
 }
+
 
 if (data.index === data.students.length) {
     data.index = 0;
